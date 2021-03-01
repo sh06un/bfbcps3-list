@@ -1,0 +1,25 @@
+{
+  "name": "bfbcps3-list",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "A node.js wrapper for the ealist program written by Luigi Auriemma, that acts as a Battlefield: Bad Company PS3 server viewer.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node -r dotenv/config index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sh06un/bfbcps3-list.git"
+  },
+  "author": "sh06un",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sh06un/bfbcps3-list/issues"
+  },
+  "homepage": "https://github.com/sh06un/bfbcps3-list#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "prompt-sync": "^4.2.0",
+    "prompt-sync-history": "^1.0.1"
+  }
+}
