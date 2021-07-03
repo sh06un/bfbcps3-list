@@ -3,6 +3,7 @@ A node.js wrapper for the ealist program written by Luigi Auriemma, that acts as
 
 ## Prerequisites
 You will need Windows in order to run this program, as this is a wrapper for the ealist program as it comes from Luigi Auriemma's website, which is a Windows build.
+
 I'm using `node v14.17.0`, so the current LTS version, at the time of writing (3rd July 2021), should work.
 
 ## How to use
