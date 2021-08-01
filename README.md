@@ -43,18 +43,18 @@ There are customisation options that you can set in order to change how the info
 Within the `userSettings.js` are the following settings:
 
 - `chosenFields` - This is an array of the fields that are to be shown in the output. These fields will also be shown in the order that you have them in this array. The fields that are available to use are as follows:
-  _ `location` - A location code.
-  _ `level_code` - A code for the map. It seems to be a filepath.
-  _ `name` - Seems to be the name of the machine that is running that particular server.
-  _ `ip` - The IP address of the server.
-  _ `port` - The port the server is running on.
-  _ `mode` - The game mode (i.e `CONQUEST` or `GOLDRUSH`).
-  _ `playgroup` - This will tell you if you can join the server with a squad or not.
-  _ `player_count` - The amount of players currently in the server.
-  _ `balance` - Whether or not the teams are balanced (I'm not too sure what their definition of 'balance' is, though).
-  _ `type` - Whether the server is open (`O`) or closed (`C`).
-  _ `map` - Maps the info from `level_code` to the current map. Useful as a replacement for `level_code` as it's no longer esoteric.
-  _ `stability` - Tells you whether or not the server is stable. This is an extension of the `location` field, as PSNProfiles user woggly4 determined that if a server has a location of `na1`, it is very likely to fail soon after startup, as also confirmed by myself. Useful alongside or as a replacement to the `location` field, as it's no longer esoteric.
+  - `location` - A location code.
+  - `level_code` - A code for the map. It seems to be a filepath.
+  - `name` - Seems to be the name of the machine that is running that particular server.
+  - `ip` - The IP address of the server.
+  - `port` - The port the server is running on.
+  - `mode` - The game mode (i.e `CONQUEST` or `GOLDRUSH`).
+  - `playgroup` - This will tell you if you can join the server with a squad or not.
+  - `player_count` - The amount of players currently in the server.
+  - `balance` - Whether or not the teams are balanced (I'm not too sure what their definition of 'balance' is, though).
+  - `type` - Whether the server is open (`O`) or closed (`C`).
+  - `map` - Maps the info from `level_code` to the current map. Useful as a replacement for `level_code` as it's no longer esoteric.
+  - `stability` - Tells you whether or not the server is stable. This is an extension of the `location` field, as PSNProfiles user woggly4 determined that if a server has a location of `na1`, it is very likely to fail soon after startup, as also confirmed by myself. Useful alongside or as a replacement to the `location` field, as it's no longer esoteric.
 
   > A note on the `stability` field - I have seen `na1` servers that ended up being stable, but I've only seen it happen once and I'm not sure of the cause. It would be, and has always been, totally safe to assume that all `na1` servers will crash soon after spawning.
 
