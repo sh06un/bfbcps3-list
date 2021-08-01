@@ -22,13 +22,13 @@ I'm using `node v14.17.0`, so the current LTS version, at the time of writing (3
 
 > For anyone curious, the command that you would have had to run was `.\ealist.exe -a NEWUSER NEWPASS mohair-pc -A` on the `ealist.exe` file, where `NEWUSER` and `NEWPASS` are the username and password that you would like to use respectively.
 
-4. Create a `.env` file on the root of the directory (again, alongside the `ealist.exe` and `index.js` files) and include your created username and password under `UNAME` for the username, and `PWORD` for password.
+3. Create a `.env` file on the root of the directory (again, alongside the `ealist.exe` and `index.js` files) and include your created username and password under `UNAME` for the username, and `PWORD` for password.
 
 > Each line should be in the format `ENV_VARIABLE=value`. For example, `UNAME=sh06un1`.
 
 > Another note, `USER` and `USERNAME` are already set as environment variables on certain OSs, so I used `UNAME` to avoid collisions. Password becoming `PWORD` was just to keep things a bit consistent.
 
-5. Once you've done this, you're good to go! Run `npm i` to initialise the repository, and then `npm start` to run the program. From here, you'll have to choose a command to run, which are listed in the next section. There are also customisation options detailed below, but you should be able to run the program with the defaults that are already set up.
+4. Once you've done this, you're good to go! Run `npm i` to initialise the repository, and then `npm start` to run the program. From here, you'll have to choose a command to run, which are listed in the next section. There are also customisation options detailed below, but you should be able to run the program with the defaults that are already set up.
 
 ## Commands
 
