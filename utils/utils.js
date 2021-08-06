@@ -3,14 +3,17 @@ import userSettings from '../userSettings.js';
 
 const _sortOutput = (field = "player_count", order = "asc", output) => {
   // sort by specified field in config
-
-  // console.log("output", output);
-  // check if field has actually been chosen
-  // return original output if it hasn't
+  
+  // if empty array or undefined, return undefined
+  if (!output || !output.length) return undefined;
+  
+  // check if field is valid for user's chosenFields array (what they have selected to see)
+  // return original output, if it isn't
   if (!output[0][field]) {
     console.log(
       "NOTICE: Please check that your chosen sortBy field is within your chosenFields array."
     );
+
     return output;
   }
 
@@ -70,7 +73,7 @@ export const formatOutput = (output) => {
     if (s.length === 59 && !_filterOutput(s)) {
       serversArray.push(_constructServerObject(s));
     }
-  });
+  }).filter(Boolean);
 
   return _sortOutput(
     userSettings.sortBy?.field,
