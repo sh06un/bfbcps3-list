@@ -20,9 +20,13 @@ function servers() {
 
     if (output) {
       const formattedOutput = formatOutput(output);
-
-      console.table(formattedOutput);
-      console.log(new Date().toString(), "\n");
+      
+      if (formattedOutput) {
+        console.table(formattedOutput);
+        console.log(new Date().toString(), "\n");
+      } else {
+        console.log("An error occurred during formatting.\n", "Please wait, as a new request to the server is being made.", '\n');
+      }
     }
   } else {
     console.log("Please supply a username and password", "\n");
