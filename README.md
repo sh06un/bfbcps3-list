@@ -24,7 +24,7 @@ I'm using `node v14.17.0`, so the current LTS version, at the time of writing (3
 
 3. Create a `.env` file on the root of the directory (again, alongside the `ealist.exe` and `index.js` files) and include your created username and password under `UNAME` for the username, and `PWORD` for password.
 
-> Each line should be in the format `ENV_VARIABLE=value`. For example, `UNAME=sh06un1`.
+> Each line should be in the format `ENV_VARIABLE=value`. For example, `UNAME=sh06un1`. Also make sure that you have file extensions turned on, so you can make sure the file is not saved as `.env.txt`, it needs to be just `.env`.
 
 > Another note, `USER` and `USERNAME` are already set as environment variables on certain OSs, so I used `UNAME` to avoid collisions. Password becoming `PWORD` was just to keep things a bit consistent.
 
